@@ -82,13 +82,14 @@ then
     curl -OL https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
     bash Miniconda3-latest-Linux-aarch64.sh 
     source ~/.bashrc
+    
     ~/miniconda3/bin/conda init bash
-    ~/miniconda3/bin/conda create -n py3 python=3.10
-    ~/miniconda3/bin/conda activate py3
-    ~/miniconda3/bin/conda install -c anaconda pip
-    ~/miniconda3/bin/pip install -U pip-tools
+    conda create -n py3 python=3.10
+    conda activate py3
+    conda install -c anaconda pip
+    pip install -U pip-tools
 else
-    ~/miniconda3/bin/conda activate py3
+    conda activate py3
 fi
 
 
