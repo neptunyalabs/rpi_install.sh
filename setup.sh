@@ -83,7 +83,7 @@ then
     bash Miniforge3-$(uname)-$(uname -m).sh
     source ~/.bashrc
     
-    ~/miniconda3/bin/conda init bash
+    ~/miniforge3/bin/conda init bash
     conda create -n py3 python=3.10 -y
     conda activate py3
     conda install -y -c anaconda pip 
