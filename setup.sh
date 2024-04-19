@@ -86,7 +86,7 @@ then
     ~/miniforge3/bin/conda init bash
     conda create -n py3 python=3.10 -y
     conda activate py3
-    conda install -y -c anaconda pip 
+    conda install -c anaconda pip 
     pip install -U -y pip-tools
 else
     conda activate py3
