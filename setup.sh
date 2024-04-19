@@ -43,10 +43,10 @@ echo "write config $CNFG"
 /bin/cat <<EOM >$CNFG
 Host github.com
     Hostname github.com
-    IdentityFile=/home/user/.ssh/waveware_deploy
+    IdentityFile=/home/$(whoami)/.ssh/waveware_deploy
 Host gist.github.com
     Hostname gist.github.com
-    IdentityFile=/home/user/.ssh/waveware_deploy
+    IdentityFile=/home/$(whoami)/.ssh/waveware_deploy
 
 EOM
 
