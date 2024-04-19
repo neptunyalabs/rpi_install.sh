@@ -31,10 +31,10 @@ eval $(ssh-agent -s)
 # /bin/cat <<EOM >"/home/$(whoami)/.bashrc"
 # eval `ssh-agent`
 # EOM
-
-/bin/cat <<EOM >"/home/$(whoami)/.bash_logout"
-kill $SSH_AGENT_PID
-EOM
+# 
+# /bin/cat <<EOM >"/home/$(whoami)/.bash_logout"
+# kill $SSH_AGENT_PID
+# EOM
 
 CNFG="/home/$(whoami)/.ssh/config"
 echo "touch $CNFG"
