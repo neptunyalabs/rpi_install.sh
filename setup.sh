@@ -80,7 +80,7 @@ echo 'Installing Anaconda Python (follow instructions, agree & yes^10)'
 if [ -z "$CONDA_EXE" ] 
 then
     curl -OL https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
-    bash Miniconda3-latest-Linux-aarch64.sh -y
+    bash Miniconda3-latest-Linux-aarch64.sh 
     source ~/.bashrc
 
     ~/miniconda3/bin/conda create -n py3
