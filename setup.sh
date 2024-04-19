@@ -35,6 +35,10 @@ echo "write config $CNFG"
 Host github.com
     Hostname github.com
     IdentityFile=/home/user/.ssh/waveware_deploy
+Host gist.github.com
+    Hostname gist.github.com
+    IdentityFile=/home/user/.ssh/waveware_deploy
+
 EOM
 
 eval $(ssh-agent -s)
