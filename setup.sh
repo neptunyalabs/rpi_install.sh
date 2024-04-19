@@ -76,20 +76,20 @@ sudo apt install python3-setuptools -y
 sudo apt install python3-pigpio -y
 sudo apt install libatlas3-base -y
 
-echo 'Installing Anaconda Python (follow instructions, agree & yes^10)'
-if [ -z "$CONDA_EXE" ] 
-then
-    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-    bash ./Miniconda3-latest-Linux-x86_64.sh
-    source ~/.bashrc
-
-    ~/miniconda3/bin/conda create -n py3
-    ~/miniconda3/bin/conda activate py3
-    ~/miniconda3/bin/conda install -c anaconda pip
-    ~/miniconda3/bin/pip install -U pip-tools
-else
-    ~/miniconda3/bin/conda activate py3
-fi
+# echo 'Installing Anaconda Python (follow instructions, agree & yes^10)'
+# if [ -z "$CONDA_EXE" ] 
+# then
+#     wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+#     bash ./Miniconda3-latest-Linux-x86_64.sh
+#     source ~/.bashrc
+# 
+#     ~/miniconda3/bin/conda create -n py3
+#     ~/miniconda3/bin/conda activate py3
+#     ~/miniconda3/bin/conda install -c anaconda pip
+#     ~/miniconda3/bin/pip install -U pip-tools
+# else
+#     ~/miniconda3/bin/conda activate py3
+# fi
 
 
 
