@@ -83,7 +83,7 @@ then
     bash Miniconda3-latest-Linux-aarch64.sh 
     source ~/.bashrc
 
-    ~/miniconda3/bin/conda create -n py3
+    ~/miniconda3/bin/conda create -n py3 python=3.10
     ~/miniconda3/bin/conda activate py3
     ~/miniconda3/bin/conda install -c anaconda pip
     ~/miniconda3/bin/pip install -U pip-tools
