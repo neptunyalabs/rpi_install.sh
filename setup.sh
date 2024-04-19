@@ -26,6 +26,15 @@ if [ -f "~/.ssh/id_rsa" ]; then
 fi
 
 
+#Write bashrc file (install permisisons)
+eval $(ssh-agent -s)
+# /bin/cat <<EOM >"/home/$(whoami)/.bashrc"
+# eval `ssh-agent`
+# EOM
+
+/bin/cat <<EOM >"/home/$(whoami)/.bash_logout"
+kill $SSH_AGENT_PID
+EOM
 
 CNFG="/home/$(whoami)/.ssh/config"
 echo "touch $CNFG"
@@ -41,7 +50,6 @@ Host gist.github.com
 
 EOM
 
-eval $(ssh-agent -s)
 ssh-add ~/.ssh/waveware_deploy
 
 #stop pigpiod
