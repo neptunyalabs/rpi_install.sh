@@ -79,8 +79,8 @@ sudo apt install libatlas3-base -y
 echo 'Installing Anaconda Python (follow instructions, agree & yes^10)'
 if [ -z "$CONDA_EXE" ] 
 then
-    curl -OL https://repo.anaconda.com/miniconda/Miniconda3-py310_24.3.0-0-Linux-aarch64.sh
-    bash Miniconda3-py310_24.3.0-0-Linux-aarch64.sh 
+    curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+    bash Miniforge3-$(uname)-$(uname -m).sh
     source ~/.bashrc
     
     ~/miniconda3/bin/conda init bash
