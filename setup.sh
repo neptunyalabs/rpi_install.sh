@@ -30,7 +30,7 @@ fi
 #Write bashrc file (install permisisons)
 eval $(ssh-agent -s)
 /bin/cat <<EOM >"/home/$(whoami)/.bashrc"
-eval `ssh-agent`
+sudo pigpiod
 EOM
 
 /bin/cat <<EOM >"/home/$(whoami)/.bash_logout"
