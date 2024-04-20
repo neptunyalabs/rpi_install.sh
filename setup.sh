@@ -29,10 +29,10 @@ fi
 
 #Write bashrc file (install permisisons)
 eval $(ssh-agent -s)
-# /bin/cat <<EOM >"/home/$(whoami)/.bashrc"
-# eval `ssh-agent`
-# EOM
-# 
+/bin/cat <<EOM >"/home/$(whoami)/.bashrc"
+eval `ssh-agent`
+EOM
+
 /bin/cat <<EOM >"/home/$(whoami)/.bash_logout"
 kill $SSH_AGENT_PID
 EOM
