@@ -93,7 +93,7 @@ else
     conda activate py3
 fi
 
-python -m pip install --force-reinstall ninja
+#python -m pip install --force-reinstall ninja
 python -m pip install git+ssh://git@github.com/neptunyalabs/wave_tank_driver.git
 
 #Install pigpiod source
