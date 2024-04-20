@@ -97,11 +97,11 @@ fi
 python -m pip install git+ssh://git@github.com/neptunyalabs/wave_tank_driver.git
 
 #Install pigpiod source
-# wget https://github.com/joan2937/pigpio/archive/master.zip
-# unzip master.zip
-# cd pigpio-master
-# make
-# sudo make install
+wget https://github.com/joan2937/pigpio/archive/master.zip
+unzip master.zip
+cd pigpio-master
+make
+sudo make install
 
 
 
