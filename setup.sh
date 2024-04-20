@@ -35,6 +35,7 @@ EOM
 
 /bin/cat <<EOM >"/home/$(whoami)/.bash_logout"
 kill $SSH_AGENT_PID
+sudo killall pigpiod
 EOM
 
 CNFG="/home/$(whoami)/.ssh/config"
