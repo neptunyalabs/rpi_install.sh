@@ -95,7 +95,7 @@ else
 fi
 
 #python -m pip install --force-reinstall ninja
-python -m pip install git+ssh://git@github.com/neptunyalabs/wave_tank_driver.git
+python -m pip install git+ssh://git@github.com/neptunyalabs/wavetankOS.git
 
 #Install pigpiod source
 wget https://github.com/joan2937/pigpio/archive/master.zip
